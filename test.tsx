@@ -57,7 +57,7 @@ beforeEach(() => {
 
 it('should give a react component', () => {
   const Foo2 = compile($injector)
-  const foo2 = new Foo2
+  const foo2 = new Foo2({ foo: 'foo', fooBar: 24 })
   expect(foo2 instanceof React.Component).toBe(true)
 })
 
